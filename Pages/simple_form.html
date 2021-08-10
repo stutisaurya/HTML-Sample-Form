@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="Shortcut icon" href="..\Assests\fav.png">
+    <title>Basic input types</title>
+    <link rel="stylesheet" href="..\CSS\Simpleform.css">
+
+</head>
+
+<body>
+    <form>
+        <!--Is used to create HTML form for user Input--->
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input Fields</h1>
+        </header>
+        <div>
+            <label for="text">Name:</label>
+            <input type="text" id="text" name="text" required>
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd" required>
+            <error-output for="pwd" class="pwd-error"></error-output>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <error-output for="email" class="email-error"></error-output>
+        </div>
+        <div>
+            <label for="url">url:</label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Number input type:</label>
+            <input type="number" id="number" name="number">
+            <error-output for="number" class="number-error"></error-output>
+        </div>
+        <div>
+            <label for="tel">Phone:</label>
+            <input type="tel" id="tel" name="tel" required>
+            <error-output for="tel" class="tel-error"></error-output>
+        </div>
+        <div>
+            <label for="search">Search: </label>
+            <input type="search" id="search" name="search">
+
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="startDate">Date and Time:</label>
+            <input type="datetime-local" id="startDate" name="startDate">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Salary</label>
+            <input type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+
+    <script src="..\Javascript\Input_Form.js"></script>
+
+</body>
+
+</html>
